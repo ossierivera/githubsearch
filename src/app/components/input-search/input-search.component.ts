@@ -10,7 +10,7 @@ import * as _ from 'lodash';
 
 export class InputSearchComponent implements OnInit {
 
-  debounceNewInputEvent = _.debounce((username) => this.githubService.newInputEvent.emit(username), 800);
+  debounceNewInputEvent = _.debounce((username) => this.githubService.sendNewInputSubject(username), 800);
 
   constructor(private githubService: GithubService) {console.log('input init');
   }

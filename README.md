@@ -24,7 +24,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ##Screenshots
-![Myself](screen1.png?raw=true "User Search for myself")
-![Guillermo](screen2.png?raw=true "User Search for friend Guillermo,  many results")
-![User Details](screen3.png?raw=true "Guillermo's details")
+![Myself](./screen1.png?raw=true "User Search for myself")
+![Guillermo](./screen2.png?raw=true "User Search for friend Guillermo,  many results")
+![User Details](./screen2.png?raw=true "Guillermo's details")
 

@@ -1,10 +1,15 @@
-# Simple Github Search
-A Simple Github user search app
+# github-search-app
+A GitHub app to search users (Angular 5)
 
-# Github Search
-- run npm install
-- launch development server instanace using ng serve
+# How to run GithubSearchApp
+- Clone this repo
+- run npm install inside the project to download all the dependencies
+- run using: ng serve
 
+# How GithubSearchApp works
+- Search by username in the input field
+- Select a profile in the results list, then will be an animated transition to the detail view
+- Detail view includes: user info, repos and followers
 
 ## Development server
 

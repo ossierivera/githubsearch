@@ -16,14 +16,14 @@ export class ListResultsComponent implements OnInit {
     console.log('list init');
   }
 
-  getUsers(username : string) { 
-    this.githubService.getUsersByUsername(username).subscribe(({items} : any) => { 
-      this.users = items;
+  getUsers(username : string) {
+    this.githubService.getUsersByUsername(username).subscribe((users: Array<GithubUserInterface>) => {
+      this.users = users;
     });
   }
 
   ngOnInit() {
-    this.githubService.newInputEvent.subscribe((username: string) => { 
+    this.githubService.newInputEvent.subscribe((username: string) => {
       this.getUsers(username);
     });
   }

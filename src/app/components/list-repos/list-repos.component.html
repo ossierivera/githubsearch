@@ -1,0 +1,8 @@
+<h2>Repos</h2>
+<ul class="list-group">
+  <li class="list-group-item list-group-item-secondary" *ngFor="let item of repos">
+    <p class="font-weight-bold">{{item.name}}</p>
+    <span class="badge badge-pill badge-dark">stars:{{item.stargazers_count}}</span>
+    <span class="badge badge-pill badge-dark">{{item.language}}</span>
+  </li>
+</ul>

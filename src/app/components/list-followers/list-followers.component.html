@@ -1,0 +1,4 @@
+<h2>Followers</h2>
+<ul class="list-group">
+  <app-list-results-item *ngFor="let item of users" [item]="item" [routerLink]="['/detail', item.login]"></app-list-results-item>
+</ul>

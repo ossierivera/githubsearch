@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-sm">
+      <h2>Pofile</h2>
+      <div class="card" style="width: 18rem;" *ngIf="user">
+        <img class="card-img-top" [src]="user.avatar_url" alt="User picture">
+        <div class="card-body">
+          <h5 class="card-title">{{user.login}}</h5>
+          <p class="card-text">{{user.bio}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <!-- <li class="list-group-item" *ngFor="let item of user | keys">{{item.key}}: {{item.value}}</li> -->
+          <li class="list-group-item">Name: {{user.name}}</li>
+          <li class="list-group-item">Blog: <a href="{{user.blog}}">{{user.blog}}</a></li>
+          <li class="list-group-item">Date creation: {{user.created_at | date}}</li>
+          <li class="list-group-item">Location : {{user.location}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm">
+      <app-list-followers></app-list-followers>
+    </div>
+    <div class="col-sm">
+      <app-list-repos></app-list-repos>
+    </div>
+  </div>  
